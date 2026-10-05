@@ -1,30 +1,41 @@
-# 🎬 CineSuper — Mini OTT Movie Database
+# cinesuper-jsoft26243
 
-**Live Demo:** https://YOUR-USERNAME.github.io/cinesuper-YOUR-JSOFT-ID/
+## Student Details
 
-**Student:** YOUR NAME | **JSOFT ID:** YOUR JSOFT ID
-**Institution:** Jain School of Future Technology
-**Course:** Database Management Systems | **Faculty:** Sathish Kumar M
+* **Name:** Redwan Ali Akbar
+* **Registration No:** jsoft26243
 
-## Tech Stack
-- Supabase (PostgreSQL) – database
-- HTML, CSS, JavaScript – frontend
-- GitHub Pages – hosting
+## Live Website
 
-## Database
-- genres (id, name)
-- movies (id, title, release_year, language, duration_min, description, poster_url, genre_id → genres)
-- reviews (id, movie_id → movies, reviewer_name, rating 1–5, comment, created_at)
-- View: movie_ratings (average rating per movie)
-- SQL scripts: see the `database/` folder
-
-## Features
-- Browse, search and filter movies
-- Movie details with reviews
-- Add a review (saved to the database)
-- Row Level Security enabled
+**Live Link:** https://redwanaliakbar.github.io/cinesuper-jsoft26243/
 
 ## My Personalisation
-- New movies added: …
-- New column: …
-- Extra feature: …
+
+### New Movies Added
+
+* Premalu
+* Hridayam
+* Kumbalangi Nights
+* Aavesham
+* Super Sharanya
+
+### New Genre
+
+* Romance
+
+### New Database Column
+
+* Added `director` column to the `movies` table.
+* The director is displayed in the movie details popup.
+
+### Extra Feature
+
+* Added a Language Filter dropdown to filter movies by language.
+
+### New Theme Colour
+
+* Changed the main theme colour from red to purple (`#7c3aed`).
+
+### Screenshots
+
+Screenshots of the new movies, language filter, director feature, and purple theme are included in the `screenshots` folder.
