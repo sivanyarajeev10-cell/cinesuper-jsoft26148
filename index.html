@@ -1,71 +1,72 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CineSuper - Mini OTT</title>
-  <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CineSuper - Mini OTT</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>🎬 CineSuper</h1>
-    <p>Your mini OTT movie library</p>
-  </header>
+	<header>
+		<h1>🎬 CineSuper</h1>
+		<p>Your mini OTT movie library</p>
+	</header>
 
 <section class="controls">
-  <input id="search" type="text" placeholder="🔍 Search movies...">
+	<input id="search" type="text" placeholder="🔍 Search movies...">
 
-  <select id="genreFilter">
-    <option value="">All Genres</option>
-  </select>
+	<select id="genreFilter">
+		<option value="">All Genres</option>
+	</select>
 
-  <select id="languageFilter">
-    <option value="">All Languages</option>
-  </select>
+	<select id="languageFilter">
+		<option value="">All Languages</option>
+	</select>
 </section>
 
-  <p id="status">Loading movies...</p>
+	<p id="status">Loading movies...</p>
 
-  <main id="movieGrid" class="grid"></main>
+	<main id="movieGrid" class="grid"></main>
 
-  <!-- Movie detail popup -->
-  <div id="modal" class="modal hidden">
-    <div class="modal-content">
-      <button id="closeModal" class="close">&times;</button>
-      <div id="movieDetail"></div>
+	<!-- Movie detail popup -->
+	<div id="modal" class="modal hidden">
+		<div class="modal-content">
+			<button id="closeModal" class="close">&times;</button>
+			<div id="movieDetail"></div>
 
-      <h3>Reviews</h3>
-      <div id="reviewList"></div>
+			<h3>Reviews</h3>
+			<div id="reviewList"></div>
 
-      <h3>Add your review</h3>
-      <form id="reviewForm">
-        <input id="reviewerName" type="text" placeholder="Your name" maxlength="50" required>
-        <select id="reviewRating" required>
-          <option value="">Select rating</option>
-          <option value="5">⭐⭐⭐⭐⭐ (5)</option>
-          <option value="4">⭐⭐⭐⭐ (4)</option>
-          <option value="3">⭐⭐⭐ (3)</option>
-          <option value="2">⭐⭐ (2)</option>
-          <option value="1">⭐ (1)</option>
-        </select>
-        <textarea id="reviewComment" placeholder="Write your comment" maxlength="500" required></textarea>
-        <button type="submit">Submit Review</button>
-      </form>
-    </div>
-  </div>
+			<h3>Add your review</h3>
+			<form id="reviewForm">
+				<input id="reviewerName" type="text" placeholder="Your name" maxlength="50" required>
 
-  <footer>
-    <p>Built by <strong>Redwan Ali Akbar</strong> · Reg No: <strong>JSOFT26243</strong></p>
-    <p>Jain School of Future Technology · Faculty: Sathish Kumar M</p>
-    <p class="powered">Powered by Supabase</p>
-  </footer>
+				<select id="reviewRating" required>
+					<option value="">Select rating</option>
+					<option value="5">⭐⭐⭐⭐⭐ (5)</option>
+					<option value="4">⭐⭐⭐⭐ (4)</option>
+					<option value="3">⭐⭐⭐ (3)</option>
+					<option value="2">⭐⭐ (2)</option>
+					<option value="1">⭐ (1)</option>
+				</select>
 
-  <!-- Order matters: 1) Supabase library  2) your keys  3) your app -->
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script src="config.js"></script>
-  <script src="app.js"></script>
+				<textarea id="reviewComment" placeholder="Write your comment" maxlength="500" required></textarea>
+
+				<button type="submit">Submit Review</button>
+			</form>
+		</div>
+	</div>
+
+	<footer>
+		<p>Built by <strong>Sivanya Rajeev</strong> · Reg No: <strong>JSOFT26148</strong></p>
+		<p>Jain School of Future Technology · Faculty: Sathish Kumar M</p>
+		<p class="powered">Powered by Supabase</p>
+	</footer>
+
+	<!-- Order matters: 1) Supabase library  2) your keys  3) your app -->
+	<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+	<script src="config.js"></script>
+	<script src="app.js"></script>
 </body>
 </html>
-```
