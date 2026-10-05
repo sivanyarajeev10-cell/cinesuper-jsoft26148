@@ -1,4 +1,5 @@
 -- SCRIPT 1: CREATE TABLES
+-- Phase 3: Create database tables
 
 create table genres (
   id   bigint generated always as identity primary key,
